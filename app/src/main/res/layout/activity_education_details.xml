@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/form_education_qualification"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="Qualification"
+        android:background="@drawable/edit_file"
+
+    />
+    <EditText
+        android:id="@+id/form_education_college"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="University/college"
+        android:background="@drawable/edit_file"
+
+    />
+    <EditText
+        android:id="@+id/form_education_passingyear"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="number"
+        android:hint="Passing year"
+        android:background="@drawable/edit_file"
+
+    />
+    <EditText
+        android:id="@+id/form_education_language"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="Language known"
+        android:background="@drawable/edit_file"
+
+    />
+
+    <EditText
+        android:id="@+id/form_education_skills"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="skills"
+        android:background="@drawable/edit_file"
+    />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/from_education_doneBTN"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_style"
+            android:text="next"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

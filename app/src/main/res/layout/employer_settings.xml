@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.hp_pc.niyoktahr.settings">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <TextView
+
+            android:text="Change Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:textSize="28dp"
+            android:textColor="#000000"
+            android:id="@+id/tvchangePassword"
+            android:layout_marginLeft="30dp" android:paddingTop="15dp"/>
+        <View android:layout_width="wrap_content" android:layout_height="2dp"
+              android:background="#D3D3D3"
+        ></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <TextView
+
+            android:text="About us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:textSize="28dp"
+            android:textColor="#000000"
+            android:id="@+id/tvaboutus"
+            android:layout_marginLeft="30dp" android:paddingTop="15dp"/>
+        <View android:layout_width="wrap_content" android:layout_height="2dp"
+              android:background="#D3D3D3"
+        ></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <TextView
+
+            android:text="Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:textSize="28dp"
+            android:textColor="#000000"
+            android:id="@+id/tvLogout"
+            android:layout_marginLeft="30dp" android:paddingTop="15dp"/>
+        <View android:layout_width="wrap_content" android:layout_height="2dp"
+              android:background="#D3D3D3"
+        ></View>
+    </LinearLayout>
+
+</LinearLayout>

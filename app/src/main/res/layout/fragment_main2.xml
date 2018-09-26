@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#ffffff"
+
+>
+
+    <EditText
+        android:id="@+id/personal_name_Etext"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="Name"
+
+        android:background="@drawable/edit_file"
+
+    />
+    <EditText
+        android:id="@+id/personal_email_Etext"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/edit_file"
+    />
+    <EditText
+        android:id="@+id/personal_phone_Etext"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="phone"
+        android:hint="contact number"
+        android:background="@drawable/edit_file"
+    />
+
+    <EditText
+        android:id="@+id/personal_location_Etext"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="location"
+        android:background="@drawable/edit_file"
+    />
+
+
+
+    <LinearLayout
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:layout_gravity="center"
+
+        android:weightSum="6">
+        <EditText
+            android:layout_weight="4"
+            android:id="@+id/personal_dob_Etext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/form_editTextHeight"
+            android:inputType="date"
+            android:hint="date of birth - (dd/mm/yy)"
+            android:background="@drawable/edit_file"
+        />
+
+        <ImageButton
+            android:id="@+id/form_personal_calendar"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/form_editTextHeight"
+            android:background="@drawable/edit_file"
+            android:src="@drawable/ic_calendar_ratio_black_24dp"/>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/form_personal_doneBTN"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_style"
+            android:text="next"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

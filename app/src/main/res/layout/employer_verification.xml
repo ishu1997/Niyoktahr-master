@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".employer_verification"
+              android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/form_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="@color/colortheme1"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+        />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/generate_code_employer"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate code"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/button_style"
+        android:textSize="30sp"
+        android:visibility="visible"
+    />
+
+    <LinearLayout
+        android:id="@+id/verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/instruction_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="contact admin  for the code(under 12 hrs) "
+        />
+
+
+        <EditText
+            android:id="@+id/verification_code"
+            android:layout_marginTop="@dimen/form_editTextTopmargin"
+            android:layout_width="@dimen/form_editTextWidth"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/form_editTextHeight"
+            android:inputType="text"
+            android:hint="code"
+
+            android:background="@drawable/edit_file"
+
+        />
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+            <Button
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:id="@+id/verify_code_employer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="verify"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/button_style"
+                android:textSize="30sp"
+                android:onClick="verfication_done"
+            />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:id="@+id/resend_code_employer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="resend"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/button_style"
+                android:textSize="30sp"
+                android:onClick="Resend_done"
+            />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:text="NOTE:- USE GOOGLE GMAIL APP TO SEND THE INFO FOR THE VERIFICATION CODE "/>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+ android:background="#ffffff"
+                tools:context="com.example.hp_pc.niyoktahr.employer_details">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_file"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Company Website Link"
+
+        android:ems="10"
+        android:id="@+id/etCompanylink" android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp" app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.43" app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" app:layout_constraintVertical_bias="0.19"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Company Description"
+        android:background="@drawable/edit_file"
+        android:ems="10"
+        android:id="@+id/etCompanydesc" app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp" app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/etCompanylink"
+        app:layout_constraintHorizontal_bias="0.43" app:layout_constraintVertical_bias="0.25"/>
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="#ffffff"
+        android:id="@+id/btCompanySubmit" android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp" app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintHorizontal_bias="0.46" app:layout_constraintVertical_bias="0.39"
+        android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/etCompanydesc"/>
+</android.support.constraint.ConstraintLayout>

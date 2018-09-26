@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical"
+    tools:context="com.example.hp_pc.niyoktahr.MainActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/employee_apllied_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="10"
+        android:clipToPadding="false"
+        android:padding="5dp" android:scrollbars="vertical"
+        tools:listitem="@layout/recycle_design_appliedpage">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.BottomNavigationView
+
+        android:id="@+id/bottom_naviagtion_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.1"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/item_icon_state"
+        app:itemTextColor="@drawable/item_icon_state"
+        app:menu="@menu/bottom_navigation"
+    >
+
+    </android.support.design.widget.BottomNavigationView>
+</LinearLayout>
+
+
+

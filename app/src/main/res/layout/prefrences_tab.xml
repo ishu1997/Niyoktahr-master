@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/form_exp_Radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/form_fresher_radiobutton"
+            android:layout_marginTop="@dimen/form_editTextTopmargin"
+            android:layout_width="@dimen/form_editTextWidth"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Fresher"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/form_editTextTopmargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textAlignment="center"
+            android:textSize="20sp"
+        />
+
+        <RadioButton
+            android:id="@+id/form_exp_radiobutton"
+            android:layout_marginTop="@dimen/form_editTextTopmargin"
+            android:layout_width="@dimen/form_editTextWidth"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Experienced"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/experienced_column"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/form_editTextTopmargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/form_exp_year"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_editTextHeight"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:hint="Year"
+                android:background="@drawable/edit_file"
+
+            />
+            <EditText
+                android:id="@+id/form_exp_month"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_editTextHeight"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="months"
+                android:background="@drawable/edit_file"
+
+            />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/form_exp_description"
+            android:layout_margin="10dp"
+            android:hint="description (in 100 words)"
+            android:background="@drawable/edit_file"
+
+            android:ems="20"
+            android:lines="4"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:maxLength="150"
+            android:gravity="left"
+            android:maxLines="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/form_exp_doneBTN"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_style"
+            android:text="next"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" tools:layout_editor_absoluteX="292dp"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

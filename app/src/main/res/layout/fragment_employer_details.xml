@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:layout_margin="5dp">
+
+
+
+    <EditText
+        android:id="@+id/personal_name_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="Name"
+
+        android:background="@drawable/edit_file"
+
+    />
+
+
+    <EditText
+        android:id="@+id/personal_post_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="Post"
+        android:background="@drawable/edit_file"
+    />
+
+    <EditText
+        android:id="@+id/personal_companyname_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="company name"
+        android:background="@drawable/edit_file"
+    />
+
+
+    <EditText
+        android:id="@+id/personal_companyURL_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="company website"
+        android:background="@drawable/edit_file"
+    />
+    <EditText
+        android:id="@+id/personal_phone_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="phone"
+        android:hint="contact number"
+        android:background="@drawable/edit_file"
+    />
+    <EditText
+        android:id="@+id/personal_email_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/edit_file"
+    />
+
+
+    <EditText
+        android:id="@+id/personal_location_employer"
+        android:layout_marginTop="@dimen/form_editTextTopmargin"
+        android:layout_width="@dimen/form_editTextWidth"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/form_editTextHeight"
+        android:inputType="text"
+        android:hint="location"
+        android:background="@drawable/edit_file"
+    />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/form_employer_doneBTN"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_style"
+            android:text="next"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

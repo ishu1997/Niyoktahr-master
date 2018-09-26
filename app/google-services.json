@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "967748302341",
+    "firebase_url": "https://niyoktahr-3d110.firebaseio.com",
+    "project_id": "niyoktahr-3d110",
+    "storage_bucket": "niyoktahr-3d110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967748302341:android:b558972ae46f304e",
+        "android_client_info": {
+          "package_name": "com.example.hp_pc.niyoktahr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967748302341-a4qu45bkd2to531unm4qlo4se6l8itq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp_pc.niyoktahr",
+            "certificate_hash": "7df25be0a5e1bfea1e4ba255c29c580418940102"
+          }
+        },
+        {
+          "client_id": "967748302341-74j9ubafq3rj1hhdsptlg5l66ulm7kj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyojm6S6TpK-U879sAQIsvYBEV62HULkE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967748302341-74j9ubafq3rj1hhdsptlg5l66ulm7kj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp_pc.niyoktahr.AboutUs">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/profile_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colortheme1"
+        android:elevation="0dp"
+
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="About us"
+            android:textColor="#fff"
+            android:textSize="30dp"
+
+        />
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:padding="7dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:textSize="15sp"
+              android:text="Niyokta HR is a human resources function that involves identifying the right people for a job, interviewing and screening potential candidates, and helping companies hire the best employees and contractors. We are often called consultancies in India. Most of our clients are located in Delhi. We help in India and abroad companies fill job openings."
+            android:textColor="#000000"/>
+    <TextView
+        android:padding="7dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:textSize="15sp"
+              android:text="Niyokta HR is about increasing recruiting productivity at a lower cost. Our sources and recruiters are 100 percent dedicated to our clients, working completely at our clients' directions with oversight from our management team. Niyokta HR is about performance, process, getting results, and treating our clients and employees as partners in our business. Niyokta HR is much more than a place to work. We are building a truly special company where our employees are inspired to come to work and proud to say, 'I work at Niyokta HR'."
+              android:textColor="#000000"/>
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".job_posting"
+              android:orientation="vertical"
+              android:weightSum="10"
+              android:background="@color/white"
+>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/profile_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="0dp"
+        android:background="@color/colortheme1"
+        android:layout_weight="1"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job post"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+        />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/job_post_designation"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:hint="Designation"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/job_post_companyname"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:hint="Company name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/job_post_vacancies"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:hint="Vacancies"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/job_post_salary"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:hint="Salary"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/job_post_description"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:ems="20"
+                    android:gravity="left"
+                    android:hint="description (in 50 words)"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:lines="2"
+                    android:maxLength="150"
+                    android:maxLines="4" />
+
+
+                <EditText
+                    android:id="@+id/job_post_email"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:hint="Contact Email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/job_post_location"
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+                    android:background="@drawable/edit_file"
+                    android:hint="location"
+                    android:inputType="text" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/form_editTextWidth"
+                    android:layout_height="@dimen/form_editTextHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_editTextTopmargin"
+
+                    android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/job_post_endDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/form_editTextHeight"
+                        android:layout_weight="4"
+                        android:background="@drawable/edit_file"
+                        android:hint="Apply till date"
+                        android:inputType="date" />
+
+                    <ImageButton
+                        android:id="@+id/job_post_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/form_editTextHeight"
+                        android:layout_weight="2"
+                        android:background="@drawable/edit_file"
+                        android:src="@drawable/ic_calendar_ratio_black_24dp" />
+
+                </LinearLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/job_post_doneBTN"
+                        android:layout_width="84dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_style"
+                        android:text="next"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+
+        android:id="@+id/bottom_naviagtion_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/item_icon_state"
+        app:itemTextColor="@drawable/item_icon_state"
+        app:menu="@menu/bottom_navigation_employer"></android.support.design.widget.BottomNavigationView>
+
+
+</LinearLayout>
